@@ -7,6 +7,9 @@ function M:peek()
 			"-j",
 			"--left",
 			"--line-numbers",
+			"--force-terminal",
+			"--panel=rounded",
+			"--guides",
 			tostring(self.file.url),
 		})
 		:stdout(Command.PIPED)
