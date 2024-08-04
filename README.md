@@ -8,6 +8,7 @@ Preview file types using `rich` command in Yazi. This plugin allows preview for 
 - CSV
 
 ## Previews/Screenshots
+
 [rich-preview1.webm](https://github.com/user-attachments/assets/580e36a8-249f-48a8-95fc-8c3d60e6a7d7)
 
 ## Requirements
@@ -37,11 +38,11 @@ Add the below to your `yazi.toml` file to allow the respective file to previewed
 [plugin]
 
 prepend_previewers = [
-    { name = "*.csv", run = "rich"}, # for csv files
-    { name = "*.md", run = "rich" }, # for markdown (.md) files
-    { name = "*.ipynb", run = "rich"}, # for jupyter notebooks (.ipynb)
-    { name = "*.json", run = "rich"}, # for json (.json) files
-#    { name = "*.lang_type", run = "rich"} # for particular language files eg. .py, .go., .lua, etc.
+    { name = "*.csv", run = "rich-preview"}, # for csv files
+    { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
+    { name = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+    { name = "*.json", run = "rich-preview"}, # for json (.json) files
+#    { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
 ]
 ```
 
