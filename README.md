@@ -8,6 +8,7 @@ Preview file types using `rich` command in Yazi. This plugin allows preview for 
 - CSV
 
 ## Previews/Screenshots
+[rich-preview1.webm](https://github.com/user-attachments/assets/580e36a8-249f-48a8-95fc-8c3d60e6a7d7)
 
 ## Requirements
 
