@@ -10,6 +10,8 @@ function M:peek()
 			"--force-terminal",
 			"--panel=rounded",
 			"--guides",
+			"--max-width",
+			tostring(self.area.w),
 			tostring(self.file.url),
 		})
 		:stdout(Command.PIPED)
