@@ -59,6 +59,7 @@ If you would like to use `rich` with more configurations, you can go to `init.lu
 "--force-terminal",
 "--panel=rounded",
 "--guides",
+"--max-width" -- to area of preview
 ```
 
 You can add more, remove and choose themes as you wish. You can set styles or Themes(as mentioned in `rich --help`) by `--theme=your_theme` and similarly for style.
