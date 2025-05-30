@@ -14,7 +14,7 @@ Preview file types using `rich` command in Yazi. This plugin allows preview for 
 
 ## Requirements
 
-- [Yazi](https://github.com/sxyazi/yazi) v0.4 or higher.
+- [Yazi](https://github.com/sxyazi/yazi) v25.4.8 or higher.
 - [rich-cli](https://github.com/Textualize/rich) v13.7.1 or higher.
 
 ## Installation
@@ -22,7 +22,7 @@ Preview file types using `rich` command in Yazi. This plugin allows preview for 
 To install this plugin, simply run-
 
 ```bash
-ya pack -a AnirudhG07/rich-preview
+ya pkg add AnirudhG07/rich-preview
 ## For linux and MacOS
 git clone https://github.com/AnirudhG07/rich-preview.yazi.git ~/.config/yazi/plugins/rich-preview.yazi
 
