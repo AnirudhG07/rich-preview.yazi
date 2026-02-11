@@ -2,6 +2,7 @@ local M = {}
 
 function M:peek(job)
 	local child = Command("rich")
+		:env("COLUMNS", tostring(job.area.w))
 		:arg({
 			"-j",
 			"--left",
