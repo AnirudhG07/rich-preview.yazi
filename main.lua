@@ -12,7 +12,7 @@ function M:peek(job)
 			"--guides",
 			"--max-width",
 			tostring(job.area.w),
-			tostring(job.file.url),
+			tostring(job.file.url.path),
 		})
 		:stdout(Command.PIPED)
 		:stderr(Command.PIPED)
