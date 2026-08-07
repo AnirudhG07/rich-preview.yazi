@@ -23,22 +23,27 @@ function M:peek(job)
 	end
 
 	local limit = job.area.h
-	local i, lines = 0, ""
+	local i, lines, errs = 0, "", 0
 	repeat
 		local next, event = child:read_line()
 		if event == 1 then
-			return require("code"):peek(job)
+			errs = errs + 1
 		elseif event ~= 0 then
 			break
-		end
-
-		i = i + 1
-		if i > job.skip then
-			lines = lines .. next
+		else
+			i = i + 1
+			if i > job.skip then
+				lines = lines .. next
+			end
 		end
 	until i >= job.skip + limit
 
 	child:start_kill()
+
+	if i == 0 and errs > 0 then
+		return require("code"):peek(job)
+	end
+
 	if job.skip > 0 and i < job.skip + limit then
 		ya.emit("peek", { math.max(0, i - limit), only_if = job.file.url, upper_bound = true })
 	else
